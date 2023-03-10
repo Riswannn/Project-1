@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show BuildContext, MaterialApp, State, StatefulWidget, Widget, runApp;
+import 'package:flutter/material.dart';
 import 'package:flutter_application_2/home.dart';
 import 'package:flutter_application_2/kutipan.dart';
 import 'package:flutter_application_2/login.dart';
@@ -19,13 +19,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: "/",
-      routes: {
-        "/home":(context) => const Home(),
-        "/matkul":(context) => const Matkul(),
-        "/":(context) => const Login(),
-        "/kutipan":(context) => const Kutipan(),
-      },
+home: Login(),
 
     );
   }

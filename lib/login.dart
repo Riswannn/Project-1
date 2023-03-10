@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart' show BorderRadius, BoxDecoration, BuildContext, Center, Color, Colors, Column, Container, CrossAxisAlignment, EdgeInsets, Expanded, FontWeight, GestureDetector, Icon, Icons, InputBorder, InputDecoration, MainAxisAlignment, Navigator, Padding, Radius, Scaffold, SingleChildScrollView, SizedBox, StatelessWidget, Text, TextField, TextStyle, Widget;
+import 'package:flutter/material.dart' ;
+import 'package:flutter_application_2/home.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -94,7 +95,7 @@ class Login extends StatelessWidget {
                       const SizedBox(height: 35),
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushReplacementNamed(context, "/home");
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Home()));
                         },
                         child: Container(
                           decoration: BoxDecoration(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:flutter_application_2/kutipan.dart';
+
 class Matkul extends StatelessWidget {
   const Matkul({super.key});
   
@@ -37,7 +39,7 @@ class Matkul extends StatelessWidget {
           ),
         TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, "/kutipan");
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Kutipan()));
                 },
                 style: ElevatedButton.styleFrom(
                 primary: Color.fromARGB(255, 0, 102, 255),
